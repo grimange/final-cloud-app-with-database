@@ -215,6 +215,7 @@ celerybeat-schedule
 # virtualenv
 venv/
 ENV/
+apnnoc-venv/
 
 # Spyder project settings
 .spyderproject
