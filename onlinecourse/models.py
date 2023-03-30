@@ -139,6 +139,7 @@ class Choice(models.Model):
     def __str__(self):
         return self.choice_text
 
+
 # <HINT> The submission model
 # One enrollment could have multiple submission
 # One submission could have multiple choices
