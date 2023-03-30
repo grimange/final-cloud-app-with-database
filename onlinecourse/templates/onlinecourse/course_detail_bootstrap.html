@@ -52,7 +52,7 @@
                                     Start Exam
                                 </button>
                                 <div id="exam" class="collapse">
-                                    <form id="question_form" action="point to a submit view" method="post">
+                                    <form id="question_form" action="{% url 'onlinecourse:submit' course_id=request.path|cut:"/"|cut:"onlinecourse" %}" method="post">
                                         {% for question in lesson.question_set.all %}
                                                 <div class="card mt-1">
                                                     <div class="card-header"><h5>{{ question.question_text}}</h5></div>
